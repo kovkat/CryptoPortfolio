@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1420"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2CF5477B29ED945900C739CA"
+               BuildableName = "CryptoPortfolio.app"
+               BlueprintName = "CryptoPortfolio"
+               ReferencedContainer = "container:CryptoPortfolio.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      language = "en"
+      region = "US"
+      systemAttachmentLifetime = "keepNever">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2C20C77E2A03DA2E0019F5A5"
+               BuildableName = "CryptoPortfolio_Tests.xctest"
+               BlueprintName = "CryptoPortfolio_Tests"
+               ReferencedContainer = "container:CryptoPortfolio.xcodeproj">
+            </BuildableReference>
+            <LocationScenarioReference
+               identifier = "San Francisco, CA, USA"
+               referenceType = "1">
+            </LocationScenarioReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2C03FA9E2A07C61000A1B8BE"
+               BuildableName = "CryptoPortfolio_UI_Tests.xctest"
+               BlueprintName = "CryptoPortfolio_UI_Tests"
+               ReferencedContainer = "container:CryptoPortfolio.xcodeproj">
+            </BuildableReference>
+            <LocationScenarioReference
+               identifier = "New York, NY, USA"
+               referenceType = "1">
+            </LocationScenarioReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = "en"
+      region = "US"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2CF5477B29ED945900C739CA"
+            BuildableName = "CryptoPortfolio.app"
+            BlueprintName = "CryptoPortfolio"
+            ReferencedContainer = "container:CryptoPortfolio.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <LocationScenarioReference
+         identifier = "New York, NY, USA"
+         referenceType = "1">
+      </LocationScenarioReference>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2CF5477B29ED945900C739CA"
+            BuildableName = "CryptoPortfolio.app"
+            BlueprintName = "CryptoPortfolio"
+            ReferencedContainer = "container:CryptoPortfolio.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
