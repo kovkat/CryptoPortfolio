@@ -8,7 +8,7 @@ struct DetailView: View {
     
     private let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
     
-    /// inject CoinModel
+
     init(coin: CoinModel) {
         _vm = StateObject(wrappedValue: DetailViewModel(coin: coin))
     }
@@ -42,7 +42,7 @@ struct DetailView_Previews: PreviewProvider {
 
 extension DetailView {
     
-    /// Header coin name and backButton
+
     private var detailHeader: some View {
         HStack  {
             DismissButton()
@@ -62,15 +62,15 @@ extension DetailView {
         }
     }
     
-    /// Graph for coin
+
     private var chart: some View {
         VStack {
             ChartView(coin: vm.coin)
         }
         .padding(.vertical, 5)
     }
-    
-    /// Overview for coin
+
+
     private var overview: some View {
         VStack (spacing: 20) {
             Text("Overview")
@@ -86,7 +86,7 @@ extension DetailView {
         }
     }
     
-    /// Custom Divider
+
     private var divider: some View {
         VStack {
             RoundedRectangle(cornerRadius: 30)
@@ -96,7 +96,7 @@ extension DetailView {
         }
     }
     
-    /// Details for coin
+
     private var details: some View {
         VStack (spacing: 20) {
             Text("Details")
@@ -112,13 +112,13 @@ extension DetailView {
         }
     }
     
-    /// Coin Image
+
     private var coinImage: some View {
         CoinImageView(coin: vm.coin)
             .frame(width: 25, height: 25, alignment: .center)
     }
     
-    /// Links
+
     private var links: some View {
         HStack {
             if let website = vm.websiteURL, let url = URL(string: website) {
@@ -138,7 +138,7 @@ extension DetailView {
         .padding(.horizontal)
     }
     
-    /// Description with button
+
     private var description: some View {
         VStack {
             if let description = vm.coinDescription, !description.isEmpty {
