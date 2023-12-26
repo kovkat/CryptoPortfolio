@@ -1,4 +1,6 @@
-
+//
+//  DetailViewModel.swift
+//
 
 import Foundation
 import Combine
@@ -23,6 +25,7 @@ final class DetailViewModel: ObservableObject {
     }
 
     private func addSubscriber() {
+        /// Return - overviewStatistic and detailsStatistic
         coinDetailDataService.$coinDetails
             .combineLatest($coin)
             .map(mapDataToStatistic)
@@ -42,6 +45,7 @@ final class DetailViewModel: ObservableObject {
     
     /// Convert coinDetails into two array -> overviewStatistic and detailsStatistic
     private func mapDataToStatistic(coinDetail: CoinDetailsModel?, coinModel: CoinModel) -> (overview: [StatisticModel], details: [StatisticModel]) {
+        /// Overview
         let price = coinModel.currentPrice.asCurrencyWith6()
         let pricePercentChange = coinModel.priceChangePercentage24H ?? 0
         let priceStat = StatisticModel(title: "Current Price", value: price, percentageChange: pricePercentChange)
