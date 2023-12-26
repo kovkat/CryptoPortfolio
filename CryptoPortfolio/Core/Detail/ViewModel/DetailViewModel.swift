@@ -32,7 +32,7 @@ final class DetailViewModel: ObservableObject {
                 self?.detailsStatistic = returnArrays.details
             }.store(in: &cancellable)
         
-        /// Return - coinDescription, websiteURL, redditURL
+
         coinDetailDataService.$coinDetails
             .sink { [weak self] returnDescriptions in
                 self?.coinDescription = returnDescriptions?.readableDescription
@@ -41,9 +41,9 @@ final class DetailViewModel: ObservableObject {
             }.store(in: &cancellable)
     }
     
-    /// Convert coinDetails into two array -> overviewStatistic and detailsStatistic
+  
     private func mapDataToStatistic(coinDetail: CoinDetailsModel?, coinModel: CoinModel) -> (overview: [StatisticModel], details: [StatisticModel]) {
-        /// Overview
+
         let price = coinModel.currentPrice.asCurrencyWith6()
         let pricePercentChange = coinModel.priceChangePercentage24H ?? 0
         let priceStat = StatisticModel(title: "Current Price", value: price, percentageChange: pricePercentChange)
@@ -86,4 +86,5 @@ final class DetailViewModel: ObservableObject {
     
         return ( overviewArray, detailsArray )
     }
+    
 }
