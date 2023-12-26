@@ -26,9 +26,9 @@ struct CircleButtonView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             
-            CircleButtonView(iconName: "info")
-                .padding()
-                .previewLayout(.sizeThatFits)
+//            CircleButtonView(iconName: "info")
+//                .padding()
+//                .previewLayout(.sizeThatFits)
             
             CircleButtonView(iconName: "plus")
                 .padding()
