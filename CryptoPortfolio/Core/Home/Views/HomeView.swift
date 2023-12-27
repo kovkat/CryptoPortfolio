@@ -84,19 +84,14 @@ extension HomeView {
     private var homeHeader: some View {
         HStack {
             // Кнопка з динамічною іконкою
-//            CircleButtonView(iconName: showPortfolio ? "plus" : "info")
-//                .accessibilityIdentifier("plus_info_Button_ID")
-//                .background(CircleButtonAnimate(animate: $showPortfolio)) // Додавання анімації
-//                .onTapGesture {
-//                    // Якщо в портфелі, відкрити аркуш додавання монет, інакше - налаштування
-//                    if showPortfolio {
-//                        hideKeyboard()
-//                        showSheet.toggle()
-//                    } else {
-//                        hideKeyboard()
-//                        showSettings.toggle()
-//                    }
-//                }
+            if showPortfolio{
+                CircleButtonView(iconName:  "plus" )
+                    .background(CircleButtonAnimate(animate: $showPortfolio)) // Додавання анімації
+                    .onTapGesture {
+                        hideKeyboard()
+                        showSheet.toggle()
+                    }
+                }
             
             Spacer()
             
