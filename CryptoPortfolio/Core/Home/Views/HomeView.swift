@@ -49,7 +49,6 @@ struct HomeView: View {
                     ZStack {
                         // Якщо портфель порожній і не введено пошуковий запит, відобразити повідомлення про порожній портфель
                         if vm.portfolioCoins.isEmpty && vm.searchText.isEmpty {
-                            emptyPortfolioCoinsList
                         } else {
                             portfolioCoinsList
                         }
@@ -153,27 +152,6 @@ extension HomeView {
         .listStyle(.plain) // Простий стиль списку
     }
     
-    // Повідомлення про порожній портфель
-    private var emptyPortfolioCoinsList: some View {
-        
-        VStack (alignment: .center) {
-            Image(systemName: "arrowshape.turn.up.backward.2.fill") // Іконка у формі стрілки
-                .resizable()
-                .frame(width: 70, height: 50)
-                .rotationEffect(Angle(degrees: 58)) // Поворот стрілки
-                .foregroundColor(Color.theme.red)
-                .shadow(color: Color.theme.red.opacity(0.7), radius: 5, y: 5) // Додавання тіні
-                .padding(.top, 50)
-            
-            Text("The portfolio is empty. Press plus to add some Coins")
-                .font(.system(size: 23 , weight: .medium, design: .monospaced))
-                .foregroundColor(Color.theme.accent)
-                .multilineTextAlignment(.center) // Вирівнювання тексту по центру
-                .shadow(color: Color.theme.red.opacity(0.7), radius: 5, y: 5) // Додавання тіні
-                .padding(.top, 20)
-                .padding(.horizontal)
-        }
-    }
     
     // Рядок із заголовками стовпців для списку монет
     private var infoColumn: some View {
